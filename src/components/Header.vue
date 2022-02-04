@@ -1,10 +1,8 @@
 <template>
-  <div id="navbar">
-    <div id="header">
-      <div id="logo-container">
-        <img class="logo" src="../assets/logo.svg"/>
-        <img class="logo" src="../assets/moix-alpha-sm.png"/>
-      </div>
+  <div id="header">
+    <div id="logo-container">
+      <img id="logo-text" src="../assets/logo.svg" alt="MOIXA"/>
+      <img id="logo-img" src="../assets/moix-alpha-sm.png" alt="MOIXA"/>
     </div>
   </div>
 </template>
@@ -18,13 +16,12 @@ export default {
 <style>
   @import "../assets/styles/base.css";
   #navbar {
-    background-color: var(--main-color);
-    width: 100%;
+
   }
 
   #header {
-    margin: 0 auto;
-    width: 60%;
+    background-color: var(--main-color);
+    width: 100%;
   }
 
   #logo-container {
@@ -32,11 +29,18 @@ export default {
     display: table;
     text-align: center;
     height: 10em;
+    width: 60%;
   }
 
-  .logo {
+  #logo-text {
     display: inline-block;
-    max-width: 50%;
+    max-width: 70%;
+    height: 10em;
+  }
+
+  #logo-img {
+    display: inline-block;
+    max-width: 30%;
     height: 10em;
   }
 </style>
