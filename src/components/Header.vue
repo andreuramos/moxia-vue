@@ -1,7 +1,7 @@
 <template>
   <div id="navbar">
-    <div id="header" class="debug">
-      <div id="logo-container" class="debug">
+    <div id="header">
+      <div id="logo-container">
         <img class="logo" src="../assets/logo.svg"/>
         <img class="logo" src="../assets/moix-alpha-sm.png"/>
       </div>
@@ -11,7 +11,7 @@
 
 <script>
 export default {
-  name: 'Navbar'
+  name: 'Header'
 }
 </script>
 
