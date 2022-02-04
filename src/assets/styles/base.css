@@ -1,0 +1,18 @@
+:root {
+    --dark-color: #1e1706;
+    --light-color: #f2ebdb;
+    --main-color: #ffc71d;
+}
+
+body {
+    background-color: var(--light-color);
+    color: var(--dark-color);
+    min-width: 100%;
+    min-height: 100%;
+    margin: 0;
+}
+
+.debug {
+    border: solid 2px red;
+}
+
