@@ -38,8 +38,9 @@ export default {
 
   #logo-img {
     display: inline-block;
-    max-width: 30%;
+    max-width: 29.5%;
     height: 5em;
     float: right;
+    margin-right: 0.5%;
   }
 </style>
