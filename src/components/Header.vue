@@ -15,12 +15,9 @@ export default {
 
 <style>
   @import "../assets/styles/base.css";
-  #navbar {
-
-  }
 
   #header {
-    background-color: var(--main-color);
+    background-color: var(--light-color);
     width: 100%;
   }
 
@@ -28,19 +25,21 @@ export default {
     margin: 0 auto;
     display: table;
     text-align: center;
-    height: 10em;
-    width: 60%;
+    height: 5em;
+    width: 100%;
   }
 
   #logo-text {
     display: inline-block;
     max-width: 70%;
-    height: 10em;
+    height: 5em;
+    float: left;
   }
 
   #logo-img {
     display: inline-block;
     max-width: 30%;
-    height: 10em;
+    height: 5em;
+    float: right;
   }
 </style>
