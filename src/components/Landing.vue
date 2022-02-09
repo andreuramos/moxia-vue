@@ -1,7 +1,15 @@
 <template>
   <div class="text-container">
-    <p class="main-text">
-      {{ text }}
+    <p>
+      <span class="main-text outline">Això era i no era</span>
+    </p>
+    <p>
+      <span class="main-text outline">una</span>
+      <span class="main-text">&nbsp;cervesa&nbsp;</span>
+      <span class="main-text outline">mallorquina</span>
+    </p>
+    <p>
+      <span class="main-text outline">de bon de veres</span>
     </p>
   </div>
 </template>
@@ -25,13 +33,18 @@ export default {
 
 .text-container {
   margin: 15%;
+  text-align: center;
 }
 
 .main-text {
   font-family: Bourbon;
   text-transform: uppercase;
-  font-size: xxx-large;
+  font-size: 5em;
   color: var(--dark-color);
-  text-align: center;
+}
+
+.outline {
+  color: var(--light-color);
+  -webkit-text-stroke: 1px black;
 }
 </style>
