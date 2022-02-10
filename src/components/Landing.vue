@@ -11,6 +11,9 @@
     <p>
       <span class="main-text outline">de bon de veres</span>
     </p>
+    <p>
+      <span class="main-text">-moixa-</span>
+    </p>
   </div>
 </template>
 
