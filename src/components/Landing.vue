@@ -32,7 +32,7 @@ export default {
 }
 
 .text-container {
-  margin: 15%;
+  margin: 5% 15%;
   text-align: center;
 }
 
@@ -40,7 +40,7 @@ export default {
   display: inline-block;
   font-family: Bourbon;
   text-transform: uppercase;
-  font-size: 8em;
+  font-size: 3em;
   color: var(--dark-color);
 }
 
@@ -49,9 +49,9 @@ export default {
   -webkit-text-stroke: 1px black;
 }
 
-@media only screen and (max-width: 700px){
+@media only screen and (min-width: 700px){
   .main-text {
-    font-size: 5em;
+    font-size: 8em;
   }
 }
 </style>
