@@ -37,14 +37,21 @@ export default {
 }
 
 .main-text {
+  display: inline-block;
   font-family: Bourbon;
   text-transform: uppercase;
-  font-size: 5em;
+  font-size: 8em;
   color: var(--dark-color);
 }
 
 .outline {
   color: var(--light-color);
   -webkit-text-stroke: 1px black;
+}
+
+@media only screen and (max-width: 700px){
+  .main-text {
+    font-size: 5em;
+  }
 }
 </style>
