@@ -12,7 +12,19 @@ body {
     margin: 0;
 }
 
+.button {
+    padding: 1em;
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    cursor: pointer;
+
+}
+
 .debug {
     border: solid 2px red;
 }
 
+@font-face {
+    font-family: "Moderat";
+    src: url("../Moderat-Extended-Regular.otf");
+}
