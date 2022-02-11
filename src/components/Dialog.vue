@@ -5,8 +5,15 @@
         <span>{{ message }}</span>
       </div>
       <div class="dialog-buttons">
-        <a class="button ok">{{ okButton }}</a>
-        <a v-if="koButton" class="button ko">{{ koButton }}</a>
+        <a
+            class="button ok"
+            @click="onOkClick()"
+        >{{ okButton }}</a>
+        <a
+            v-if="koButton"
+            class="button ko"
+            @click="onKoClick()"
+        >{{ koButton }}</a>
       </div>
     </div>
   </div>
@@ -15,7 +22,15 @@
 <script>
 export default {
   name: "Dialog",
-  props: ["message", "okButton", "koButton"]
+  props: ["message", "okButton", "koButton"],
+  methods: {
+    onOkClick () {
+      this.$emit("ageVerification", true);
+    },
+    onKoClick () {
+      this.$emit("ageVerification", false);
+    }
+  }
 }
 </script>
 

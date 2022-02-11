@@ -1,9 +1,11 @@
 <template>
   <div id="app">
     <Dialog
-        message="Uep aqueix! Que ets major d'edat per agafar una moixa?"
+        v-if="!isAgeVerified"
+        message="Uep aqueix! Que ets major d'edat per agafar una bona moixa?"
         ok-button="Vés! Posa'men 3"
         ko-button="Batua, idoi no"
+        @ageVerification="handleAgeVerification"
     />
     <Header/>
     <Landing/>
@@ -19,6 +21,20 @@ export default {
   name: 'App',
   components: {
     Header, Landing, Dialog
+  },
+  data: function() {
+    return {
+      'isAgeVerified': false
+    }
+  },
+  methods: {
+    handleAgeVerification (result) {
+      if (result) {
+        this.isAgeVerified = true;
+      } else {
+        window.location.href = "https://www.google.com"
+      }
+    }
   }
 }
 </script>
