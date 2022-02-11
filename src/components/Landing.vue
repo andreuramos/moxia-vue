@@ -1,19 +1,21 @@
 <template>
-  <div class="text-container">
-    <p>
-      <span class="main-text outline">Això era i no era</span>
-    </p>
-    <p>
-      <span class="main-text outline">una</span>
-      <span class="main-text">&nbsp;cervesa&nbsp;</span>
-      <span class="main-text outline">mallorquina</span>
-    </p>
-    <p>
-      <span class="main-text outline">de bon de veres</span>
-    </p>
-    <p>
-      <span class="main-text">-moixa-</span>
-    </p>
+  <div class="container">
+    <div class="text-container">
+      <p>
+        <span class="main-text outline">Això era i no era</span>
+      </p>
+      <p>
+        <span class="main-text outline">una</span>
+        <span class="main-text">&nbsp;cervesa&nbsp;</span>
+        <span class="main-text outline">mallorquina</span>
+      </p>
+      <p>
+        <span class="main-text outline">de bon de veres</span>
+      </p>
+      <p>
+        <span class="main-text">-moixa-</span>
+      </p>
+    </div>
   </div>
 </template>
 
@@ -34,6 +36,10 @@ export default {
   src: url("../assets/BourbonSt-Regular.ttf");
 }
 
+.container {
+  width: 100%;
+}
+
 .text-container {
   margin: 5% 15%;
   text-align: center;
@@ -48,7 +54,7 @@ export default {
 }
 
 .outline {
-  color: var(--light-color);
+  color: rgba(0,0,0,0%);
   -webkit-text-stroke: 1px black;
 }
 
