@@ -17,7 +17,6 @@ body {
     background-color: var(--dark-color);
     color: var(--light-color);
     cursor: pointer;
-
 }
 
 .debug {
@@ -27,4 +26,9 @@ body {
 @font-face {
     font-family: "Moderat";
     src: url("../Moderat-Extended-Regular.otf");
+}
+
+@font-face {
+    font-family: "Bourbon";
+    src: url("../BourbonSt-Regular.ttf");
 }

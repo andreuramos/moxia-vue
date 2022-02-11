@@ -31,11 +31,6 @@ export default {
 </script>
 
 <style>
-@font-face {
-  font-family: "Bourbon";
-  src: url("../assets/BourbonSt-Regular.ttf");
-}
-
 .container {
   width: 100%;
 }
