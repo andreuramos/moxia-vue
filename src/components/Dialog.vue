@@ -93,7 +93,7 @@ export default {
     background-position-x: calc(100% + 225px);
     background-position-y: -250px;
     animation-name: saMoixaTeGuaita;
-    animation-duration: 2s;
+    animation-duration: 1s;
   }
 
   .dialog {
