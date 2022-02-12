@@ -71,6 +71,11 @@ export default {
 @media only screen and (min-width: 700px) {
   .dialog {
     width: 30%;
+
+    background-image: url("../assets/moixa-guaita-1.png");
+    background-repeat: no-repeat;
+    background-position-x: calc(100% + 250px);
+    background-position-y: -250px;
   }
 }
 </style>
