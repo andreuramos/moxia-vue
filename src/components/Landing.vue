@@ -21,12 +21,7 @@
 
 <script>
 export default {
-  name: "Landing",
-  data() {
-    return {
-      text: "Això era i no era una cervesa mallorquina de bon de veres."
-    }
-  }
+  name: "Landing"
 }
 </script>
 
