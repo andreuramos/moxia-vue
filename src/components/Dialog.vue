@@ -1,6 +1,6 @@
 <template>
   <div class="overlay">
-    <div class="dialog">
+    <div class="dialog" v-bind:class="(hoveringOkButton)?'moixa-guaita':''">
       <div class="content">
         <span>{{ message }}</span>
       </div>
@@ -8,6 +8,8 @@
         <a
             class="button ok"
             @click="onOkClick()"
+            @mouseenter="moixaGuaita()"
+            @mouseleave="moixaAmaga()"
         >{{ okButton }}</a>
         <a
             v-if="koButton"
@@ -23,12 +25,23 @@
 export default {
   name: "Dialog",
   props: ["message", "okButton", "koButton"],
+  data: function () {
+    return {
+      hoveringOkButton: false
+    }
+  },
   methods: {
     onOkClick () {
       this.$emit("ageVerification", true);
     },
     onKoClick () {
       this.$emit("ageVerification", false);
+    },
+    moixaGuaita() {
+      this.hoveringOkButton = true;
+    },
+    moixaAmaga() {
+      this.hoveringOkButton = false;
     }
   }
 }
@@ -69,13 +82,22 @@ export default {
 }
 
 @media only screen and (min-width: 700px) {
-  .dialog {
-    width: 30%;
+  @keyframes saMoixaTeGuaita {
+    from {background-position-y: -500px;}
+    to {background-position-y: -250px;}
+  }
 
+  .moixa-guaita {
     background-image: url("../assets/moixa-guaita-1.png");
     background-repeat: no-repeat;
-    background-position-x: calc(100% + 250px);
+    background-position-x: calc(100% + 225px);
     background-position-y: -250px;
+    animation-name: saMoixaTeGuaita;
+    animation-duration: 2s;
+  }
+
+  .dialog {
+    width: 30%;
   }
 }
 </style>
