@@ -9,6 +9,7 @@
     />
     <Header/>
     <Landing/>
+    <Gallery/>
   </div>
 </template>
 
@@ -16,10 +17,12 @@
 import Header from "./components/Header";
 import Landing from "@/components/Landing";
 import Dialog from "@/components/Dialog";
+import Gallery from "@/components/Gallery";
 
 export default {
   name: 'App',
   components: {
+    Gallery,
     Header, Landing, Dialog
   },
   data: function() {

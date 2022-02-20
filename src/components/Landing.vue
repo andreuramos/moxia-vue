@@ -30,6 +30,7 @@ export default {
   display: block;
   top: 40%;
   right: 5%;
+  z-index: 1;
 }
 
 #landing-brand {
