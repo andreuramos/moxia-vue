@@ -16,6 +16,7 @@ export default {
 .gallery {
   width: 100%;
   overflow-x: hidden;
+  display: none;
 }
 
 .gallery img {
@@ -25,6 +26,10 @@ export default {
 }
 
 @media only screen and (min-width: 700px) {
+  .gallery {
+    display: block;
+  }
+
   .gallery img {
     position: relative;
     width: 30%;
