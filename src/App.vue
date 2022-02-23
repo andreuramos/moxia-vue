@@ -10,6 +10,7 @@
     <Header/>
     <Landing/>
     <Gallery/>
+    <Description/>
   </div>
 </template>
 
@@ -18,10 +19,12 @@ import Header from "./components/Header";
 import Landing from "@/components/Landing";
 import Dialog from "@/components/Dialog";
 import Gallery from "@/components/Gallery";
+import Description from "@/components/Description";
 
 export default {
   name: 'App',
   components: {
+    Description,
     Gallery,
     Header, Landing, Dialog
   },
