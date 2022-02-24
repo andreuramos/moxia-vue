@@ -17,6 +17,7 @@ export default {
 <style>
 .container {
   width: 100%;
+  position:relative;
 }
 
 #landing-img {
@@ -26,9 +27,9 @@ export default {
 }
 
 #dolentia-seal {
-  position: fixed;
+  position: absolute;
   display: block;
-  top: 40%;
+  top: 65%;
   right: 5%;
   z-index: 1;
 }
@@ -46,7 +47,6 @@ export default {
   }
 
   #dolentia-seal {
-    top: 65%;
     right: 15%;
   }
 
