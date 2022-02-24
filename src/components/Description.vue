@@ -47,6 +47,7 @@ export default {
 @media only screen and (min-width: 700px) {
   .description-img {
     content: url("../assets/pictures/moixa-botella-lg.jpg");
+    max-width: 60%;
   }
 }
 </style>
