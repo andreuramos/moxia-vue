@@ -34,6 +34,7 @@ export default {
   position: absolute;
   right: 0;
   max-width: 60%;
+  margin-top: 3em;
 }
 
 .description-text {
