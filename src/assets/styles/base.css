@@ -32,3 +32,8 @@ body {
     font-family: "Bourbon";
     src: url("../BourbonSt-Regular.ttf");
 }
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("../Montserrat-Bold.ttf");
+}
