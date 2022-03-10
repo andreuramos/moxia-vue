@@ -11,6 +11,7 @@
     <Landing/>
     <Gallery/>
     <Description/>
+<!--    <Story/>-->
   </div>
 </template>
 
@@ -20,10 +21,12 @@ import Landing from "@/components/Landing";
 import Dialog from "@/components/Dialog";
 import Gallery from "@/components/Gallery";
 import Description from "@/components/Description";
+// import Story from "@/components/Story";
 
 export default {
   name: 'App',
   components: {
+    // Story,
     Description,
     Gallery,
     Header, Landing, Dialog
